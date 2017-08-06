@@ -12,7 +12,7 @@ class PhoneNumber extends FakerPhoneNumber
         '08{{operatorCode}} #### ###',  // 0811 XXXX XXX, 11 digits
         '08{{operatorCode}} #### ####', // 0811 XXXX XXXX, 12 digits
     ];
-    
+
     protected static $e164MobilePhoneFormats = [
         // mobile numbers
         '+628{{operatorCode}}######',   // 0811 XXX XXX, 10 digits, very old
@@ -38,7 +38,7 @@ class PhoneNumber extends FakerPhoneNumber
     {
         return static::numerify($this->generator->parse(static::randomElement(static::$mobilePhoneFormats)));
     }
-    
+
     public function e164MobilePhoneNumber()
     {
         return static::numerify($this->generator->parse(static::randomElement(static::$e164MobilePhoneFormats)));
