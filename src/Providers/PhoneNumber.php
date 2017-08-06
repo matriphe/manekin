@@ -34,11 +34,23 @@ class PhoneNumber extends FakerPhoneNumber
         return self::randomElement($numbers);
     }
 
+    /**
+     * Return mobile phone number.
+     * 
+     * @access public
+     * @return void
+     */
     public function mobilePhoneNumber()
     {
         return static::numerify($this->generator->parse(static::randomElement(static::$mobilePhoneFormats)));
     }
 
+    /**
+     * Return mobile phone number in E164 format.
+     * 
+     * @access public
+     * @return void
+     */
     public function e164MobilePhoneNumber()
     {
         return static::numerify($this->generator->parse(static::randomElement(static::$e164MobilePhoneFormats)));

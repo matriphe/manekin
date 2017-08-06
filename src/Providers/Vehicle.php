@@ -41,11 +41,23 @@ class Vehicle extends Base
         return self::randomElement(self::$areaCode);
     }
 
+    /**
+     * Return reguler police number.
+     * 
+     * @access public
+     * @return void
+     */
     public function policeNumber()
     {
         return strtoupper(static::bothify($this->generator->parse(static::randomElement(static::$policeNumber))));
     }
 
+    /**
+     * Return special police number.
+     * 
+     * @access public
+     * @return void
+     */
     public function specialPoliceNumber()
     {
         return static::numerify($this->generator->parse(static::randomElement(static::$specialPoliceNumber)));

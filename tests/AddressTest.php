@@ -39,7 +39,7 @@ class AddressTest extends PHPUnit_Framework_TestCase
         $this->assertLessThanOrEqual($this->maxLongitude, $longitude);
     }
 
-    public function testCoordinate()
+    public function testCoordinates()
     {
         $coordinate = $this->faker->localCoordinates();
         $this->assertInternalType('array', $coordinate);

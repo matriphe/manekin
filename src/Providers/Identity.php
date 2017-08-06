@@ -90,6 +90,13 @@ class Identity extends Base
         return static::getRandomBirthDate()->format('ymd');
     }
 
+    /**
+     * Return KTP number (NIK).
+     * 
+     * @access public
+     * @param mixed $gender (default: null)
+     * @return void
+     */
     public function nik($gender = null)
     {
         if (empty($gender)) {
@@ -103,11 +110,23 @@ class Identity extends Base
         return static::numerify($this->generator->parse(static::$nikMale));
     }
 
+    /**
+     * Return SIM number.
+     * 
+     * @access public
+     * @return void
+     */
     public function sim()
     {
         return static::numerify($this->generator->parse(static::$sim));
     }
 
+    /**
+     * Return Passport number.
+     * 
+     * @access public
+     * @return void
+     */
     public function passport()
     {
         return strtoupper(static::bothify($this->generator->parse(static::randomElement(static::$passport))));
