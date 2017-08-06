@@ -16,11 +16,11 @@ class Identity extends Base
 
     protected static $sim = '{{birthdateSim}}######';
 
-    protected static $passport = array(
+    protected static $passport = [
         '?#######', '?######',
-    );
+    ];
 
-    protected static $cityCode = array(
+    protected static $cityCode = [
         1101, 1102, 1103, 1104, 1105, 1106, 1107, 1108, 1109, 1110, 1111, 1112,
         1113, 1114, 1115, 1116, 1117, 1118, 1171, 1172, 1173, 1174, 1175, 1201,
         1202, 1203, 1204, 1205, 1206, 1207, 1208, 1209, 1210, 1211, 1212, 1213,
@@ -63,7 +63,7 @@ class Identity extends Base
         9110, 9171, 9401, 9402, 9403, 9404, 9408, 9409, 9410, 9411, 9412, 9413,
         9414, 9415, 9416, 9417, 9418, 9419, 9420, 9426, 9427, 9428, 9429, 9430,
         9431, 9432, 9433, 9434, 9435, 9436, 9471,
-    );
+    ];
 
     public static function cityCode()
     {
@@ -92,15 +92,14 @@ class Identity extends Base
 
     /**
      * Return KTP number (NIK).
-     * 
+     *
      * @access public
      * @param mixed $gender (default: null)
-     * @return void
      */
     public function nik($gender = null)
     {
         if (empty($gender)) {
-            $gender = static::randomElement(array(static::GENDER_MALE, static::GENDER_FEMALE));
+            $gender = static::randomElement([static::GENDER_MALE, static::GENDER_FEMALE]);
         }
 
         if ($gender === static::GENDER_FEMALE) {
@@ -112,9 +111,8 @@ class Identity extends Base
 
     /**
      * Return SIM number.
-     * 
+     *
      * @access public
-     * @return void
      */
     public function sim()
     {
@@ -123,9 +121,8 @@ class Identity extends Base
 
     /**
      * Return Passport number.
-     * 
+     *
      * @access public
-     * @return void
      */
     public function passport()
     {

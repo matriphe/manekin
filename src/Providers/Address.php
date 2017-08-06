@@ -9,7 +9,7 @@ class Address extends FakerAddress
     /**
      * @link https://id.wikipedia.org/wiki/Daftar_jalan_di_Kota_Surakarta
      **/
-    protected static $street = array(
+    protected static $street = [
         'Ahmad Yani', 'Agus Salim', 'Bhayangkara', 'Gajah Mada', 'Honggowongso',
         'Cokroaminoto', 'Juanda', 'Katamso', 'M.T. Haryono', 'Monginsidi',
         'Mulyadi', 'Muwardi', 'Panjaitan', 'R.M. Said', 'Rajiman',
@@ -28,19 +28,19 @@ class Address extends FakerAddress
         'Suryo Pranoto', 'Sutarjo', 'Tangkuban Perahu', 'Teuku Umar', 'Thamrin',
         'Untung Suropati', 'Wahid Hasyim', 'Wora Wari', 'Yohanes', 'Yosodipuro',
 
-    );
+    ];
 
-    protected static $streetPrefix = array(
+    protected static $streetPrefix = [
         'Gg.', 'Jl.',
-    );
+    ];
 
-    protected static $stateAbbr = array(
+    protected static $stateAbbr = [
        'Aceh', 'Sumut', 'Sumbar', 'Jambi', 'Babel', 'Riau', 'Kepri', 'Bengkulu', 'Sumsel',
        'Lampung', 'Banten', 'DKI', 'Jabar', 'Jateng', 'Jatim', 'NTT', 'DIY',
        'Bali', 'NTB', 'Kalbar', 'Kalteng', 'Kalsel', 'Kaltim', 'Kalut', 'Sulsel',
        'Sulut', 'Gorontalo', 'Sulteng', 'Sulbar', 'Sultra', 'Maluku', 'Malut',
        'Papbar', 'Papua',
-    );
+    ];
 
     /**
      * @link: http://latitudelongitude.org/id/
