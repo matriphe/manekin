@@ -9,10 +9,10 @@ class Internet extends FakerInternet
     /**
      * @var array some email domains
      */
-    protected static $freeEmailDomain = [
+    protected static $freeEmailDomain = array(
         'gmail.com', 'yahoo.com', 'gmail.co.id', 'yahoo.co.id', 'live.com',
         'outlook.com', 'hotmail.com',
-    ];
+    );
 
     /**
      * General tld and local tld
@@ -20,9 +20,9 @@ class Internet extends FakerInternet
      * @link http://idwebhost.com/
      * @link http://domain.id/
      */
-    protected static $tld = [
+    protected static $tld = array(
         'com', 'net', 'org', 'asia', 'tv', 'biz', 'info', 'in', 'name', 'co',
         'ac.id', 'sch.id', 'go.id', 'mil.id', 'co.id', 'or.id', 'web.id',
         'my.id', 'biz.id', 'desa.id', 'id',
-    ];
+    );
 }

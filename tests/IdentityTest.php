@@ -62,4 +62,15 @@ class IdentityTest extends PHPUnit_Framework_TestCase
             $this->assertRegExp('/^[0-9]{12}$/', $number);
         }
     }
+
+    /**
+     * @test
+     */
+    public function testPassport()
+    {
+        for ($i = 0; $i < 10; $i++) {
+            $number = $this->faker->passport();
+            $this->assertRegExp('/^[A-Z]{1}[0-9]{6,7}$/', $number);
+        }
+    }
 }

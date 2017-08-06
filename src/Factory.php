@@ -7,11 +7,11 @@ use InvalidArgumentException;
 
 class Factory
 {
-    protected static $defaultProviders = [
+    protected static $defaultProviders = array(
         'Address', 'Barcode', 'Biased', 'Color', 'Company', 'DateTime', 'File',
         'HtmlLorem', 'Identity', 'Image', 'Internet', 'Lorem', 'Miscellaneous',
         'Payment', 'Person', 'PhoneNumber', 'Text', 'UserAgent', 'Uuid', 'Vehicle',
-    ];
+    );
 
     /**
      * Create a new generator
