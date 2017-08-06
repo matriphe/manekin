@@ -41,4 +41,19 @@ class Address extends FakerAddress
        'Sulut', 'Gorontalo', 'Sulteng', 'Sulbar', 'Sultra', 'Maluku', 'Malut',
        'Papbar', 'Papua',
     );
+
+    /**
+     * @link: http://latitudelongitude.org/id/
+     * @param mixed $min
+     * @param mixed $max
+     */
+    public static function latitude($min = -10.1718, $max = 5.88969)
+    {
+        return (float) static::randomFloat(6, $min, $max);
+    }
+
+    public static function longitude($min = 95.31644, $max = 140.71813)
+    {
+        return (float) static::randomFloat(6, $min, $max);
+    }
 }
