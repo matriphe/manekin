@@ -1,0 +1,38 @@
+{
+    "name": "matriphe/manekin",
+    "description": "Faker extender specific for Indonesian data.",
+    "keywords": [
+        "faker", "indonesia", "test"    
+    ],
+    "type": "library",
+    "require": {
+        "fzaninotto/faker": "^1.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Muhammad Zamroni",
+            "email": "halo@matriphe.com",
+            "homepage":"http://matriphe.com"
+        }
+    ],
+    "autoload":{  
+        "psr-4":{  
+            "Matriphe\\Manekin\\":"src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Matriphe\\Manekin\\Tests\\": "tests/",
+            "Faker\\Test\\": "vendor/fzaninotto/faker/test/Faker/"
+        }
+    },
+    "config":{  
+        "sort-packages":true
+    },
+    "minimum-stability":"dev",
+    "prefer-stable":true
+}
