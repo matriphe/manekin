@@ -6,24 +6,24 @@ use Faker\Provider\id_ID\Address as FakerAddress;
 
 class Address extends FakerAddress
 {
-    protected static $addressFormats = array(
+    protected static $addressFormats = [
         '{{streetAddress}}, {{city}}, {{state}}, {{postcode}}',
         '{{streetAddress}}, {{city}}, {{postcode}}',
         '{{streetAddress}}, {{city}}, {{state}}',
         '{{streetAddress}}, {{city}}',
-    );
+    ];
 
-    protected static $buildingNumber = array(
-        '#', '##', '##?', '?##', '??##', '?-#', '?-##', '?-###', '?/#', '??/##'
-    );
-    
-    protected static $streetAddressFormats = array(
+    protected static $buildingNumber = [
+        '#', '##', '##?', '?##', '??##', '?-#', '?-##', '?-###', '?/#', '??/##',
+    ];
+
+    protected static $streetAddressFormats = [
         '{{streetPrefix}} {{street}} No. {{buildingNumber}}',
         '{{streetPrefix}} {{street}} Blok. {{buildingNumber}}',
-    );
-    
-    protected static $postcode = array();
-    
+    ];
+
+    protected static $postcode = [];
+
     /**
      * @link https://id.wikipedia.org/wiki/Daftar_jalan_di_Kota_Surakarta
      **/
@@ -62,16 +62,17 @@ class Address extends FakerAddress
 
     /**
      * @link: http://latitudelongitude.org/id/
+     * @param mixed $min
+     * @param mixed $max
      */
-     
+
     /**
      * Get Latitude.
-     * 
+     *
      * @access public
      * @static
      * @param float $min (default: -10.1718)
      * @param float $max (default: 5.88969)
-     * @return void
      */
     public static function latitude($min = -10.1718, $max = 5.88969)
     {
@@ -80,25 +81,23 @@ class Address extends FakerAddress
 
     /**
      * Get Longitude.
-     * 
+     *
      * @access public
      * @static
      * @param float $min (default: 95.31644)
      * @param float $max (default: 140.71813)
-     * @return void
      */
     public static function longitude($min = 95.31644, $max = 140.71813)
     {
         return (float) static::randomFloat(6, $min, $max);
     }
-    
+
     /**
      * Get postal code.
-     * 
+     *
      * @link: http://www.nomor.net/_kodepos.php?_i=provinsi-kodepos&daerah=&jobs=&perhal=60&urut=&asc=000011111&sby=000000
      * @access public
      * @static
-     * @return void
      */
     public static function postcode()
     {
@@ -117,12 +116,12 @@ class Address extends FakerAddress
             mt_rand(25111, 27779), mt_rand(30111, 32387), mt_rand(20111, 22998),
         ]);
     }
-    
+
     public static function buildingNumber()
     {
         return strtoupper(static::bothify(static::randomElement(static::$buildingNumber)));
     }
-    
+
     public static function country()
     {
         return 'Indonesia';

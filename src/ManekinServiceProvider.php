@@ -2,15 +2,14 @@
 
 namespace Matriphe\Manekin;
 
-use Illuminate\Support\ServiceProvider;
 use Faker\Generator;
+use Illuminate\Support\ServiceProvider;
 
 class ManekinServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
      *
-     * @return void
      */
     public function boot()
     {
@@ -20,7 +19,6 @@ class ManekinServiceProvider extends ServiceProvider
     /**
      * Register the application services.
      *
-     * @return void
      */
     public function register()
     {

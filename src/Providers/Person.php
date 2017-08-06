@@ -11,7 +11,7 @@ class Person extends FakerPerson
         'S.T.', 'S.Pd', 'S.Psi', 'S.I.Kom', 'S.Si.', 'S.Sos', 'S.Farm',
         'M.M.', 'M.Kom.', 'M.TI.', 'M.Pd', 'M.Farm', 'M.Ak',
     ];
-    
+
     public static function suffix()
     {
         return static::randomElement(static::$suffix);
