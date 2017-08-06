@@ -9,8 +9,8 @@ class Factory
 {
     protected static $defaultProviders = [
         'Address', 'Barcode', 'Biased', 'Color', 'Company', 'DateTime', 'File',
-        'HtmlLorem', 'Identity', 'Image', 'Internet', 'Lorem', 'Miscellaneous',
-        'Payment', 'Person', 'PhoneNumber', 'Text', 'UserAgent', 'Uuid', 'Vehicle',
+        'Identity', 'Image', 'Internet', 'Lorem', 'Miscellaneous', 'Payment',
+        'Person', 'PhoneNumber', 'Text', 'UserAgent', 'Uuid', 'Vehicle',
     ];
 
     /**
