@@ -2,7 +2,13 @@
     "name": "matriphe/manekin",
     "description": "Faker extender specific for Indonesian data.",
     "keywords": [
-        "faker", "indonesia", "test"    
+        "faker",
+        "fake",
+        "fake-data",
+        "indonesia",
+        "id",
+        "test",
+        "dummy"
     ],
     "type": "library",
     "require": {
