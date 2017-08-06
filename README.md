@@ -1,5 +1,7 @@
 # Manekin
 
+[![Build Status](https://travis-ci.org/matriphe/manekin.svg?branch=master)](https://travis-ci.org/matriphe/manekin)
+
 Manekin is [Faker](https://github.com/fzaninotto/Faker) extender specific for Indonesian data. It generate fake data specific for Indonesia only.
 
 ## Usage
