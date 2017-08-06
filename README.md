@@ -4,6 +4,24 @@
 
 Manekin is [Faker](https://github.com/fzaninotto/Faker) extender specific for Indonesian data. It generate fake data specific for Indonesia only.
 
+## Installation
+
+Using [composer](https://getcomposer.org/), run this command.
+
+```console
+composer require matriphe/manekin
+```
+
+### Laravel 5 Integration
+
+Open `config/app.php` and add this line in `providers` section.
+
+```php
+Matriphe\Manekin\ManekinServiceProvider::class,
+```
+
+Now your mode factory should load **Manekin**.
+
 ## Usage
 
 Manekin's methods are same with Faker's methods. It just extending the methods.
