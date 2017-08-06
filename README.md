@@ -20,7 +20,7 @@ Open `config/app.php` and add this line in `providers` section.
 Matriphe\Manekin\ManekinServiceProvider::class,
 ```
 
-Now your mode factory should load **Manekin**.
+Now your model factory should load **Manekin**.
 
 ## Usage
 
