@@ -8,8 +8,8 @@ use InvalidArgumentException;
 class Factory
 {
     protected static $defaultProviders = [
-        'Address', 'Barcode', 'Biased', 'Color', 'Company', 'DateTime', 'File',
-        'Identity', 'Image', 'Internet', 'Lorem', 'Miscellaneous', 'Payment',
+        'Address', 'Barcode', 'Biased', 'Color', 'Company', 'DateTime', 'Device',
+        'File', 'Identity', 'Image', 'Internet', 'Lorem', 'Miscellaneous', 'Payment',
         'Person', 'PhoneNumber', 'Text', 'UserAgent', 'Uuid', 'Vehicle',
     ];
 

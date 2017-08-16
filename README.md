@@ -38,6 +38,17 @@ longitude($min = 95.31644, $max = 140.71813)  // 106.84513
 localCoordinates()                            // array('latitude' => -6.21462, 'longitude' => 106.84513)
 ```
 
+#### Matriphe\Manekin\Providers\Device
+
+Return IMEI, IMSI, ICCID, and Android Device ID.
+
+```php
+imei()                  // 8658507594263070
+imsi()                  // 510079932515821
+iccid()                 // 8962097349284530254C
+androidDeviceId()       // 3A73C5C7FB3629D1
+```
+
 #### Matriphe\Manekin\Providers\Identity
 
 Return NIK (Nomor Induk Kependudukan), SIM (Surat Izin Mengemudi), and Passport number.
