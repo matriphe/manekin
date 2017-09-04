@@ -8,7 +8,9 @@
         "indonesia",
         "id",
         "test",
-        "dummy"
+        "dummy",
+        "manequin",
+        "manekin"
     ],
     "type": "library",
     "require": {
@@ -26,12 +28,12 @@
         {
             "name": "Muhammad Zamroni",
             "email": "halo@matriphe.com",
-            "homepage":"http://matriphe.com"
+            "homepage": "http://matriphe.com"
         }
     ],
     "autoload":{  
         "psr-4":{  
-            "Matriphe\\Manekin\\":"src/"
+            "Matriphe\\Manekin\\": "src/"
         }
     },
     "autoload-dev": {
@@ -41,8 +43,15 @@
         }
     },
     "config":{  
-        "sort-packages":true
+        "sort-packages": true
     },
-    "minimum-stability":"dev",
-    "prefer-stable":true
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Matriphe\Manekin\ManekinServiceProvider"
+            ]
+        }
+    }
 }
