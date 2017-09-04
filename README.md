@@ -22,6 +22,10 @@ Matriphe\Manekin\ManekinServiceProvider::class,
 
 Now your model factory should load **Manekin**.
 
+#### Laravel 5.5 Package Auto Discovery ####
+
+This package supports [Laravel 5.5 package auto discovery](https://laravel.com/docs/5.5/packages#package-discovery) feature. You don't need to manually add in the `config/app.php`.
+
 ## Usage
 
 Manekin's methods are same with Faker's methods. It just extending the methods.
