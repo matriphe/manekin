@@ -2,7 +2,6 @@
 
 namespace Matriphe\Manekin\Providers;
 
-use DateTime;
 use Faker\Provider\Base;
 
 class Identity extends Base
@@ -144,6 +143,6 @@ class Identity extends Base
     {
         $timestamp = mt_rand(strtotime('-100 years'), strtotime('now'));
 
-        return new DateTime('@'.$timestamp);
+        return new \DateTime('@'.$timestamp);
     }
 }
