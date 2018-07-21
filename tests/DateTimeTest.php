@@ -25,7 +25,7 @@ class DateTimeTest extends PHPUnit_Framework_TestCase
     {
         $birthDate = $this->faker->birthDate($this->minAge, $this->maxAge);
 
-        $this->assertInstanceOf(DateTime::class, $birthDate);
+        $this->assertInstanceOf('DateTime', $birthDate);
         $this->assertGreaterThanOrEqual(new DateTime('-'.$this->maxAge.' year'), $birthDate);
         $this->assertLessThanOrEqual(new DateTime('-'.$this->minAge.' year'), $birthDate);
     }
