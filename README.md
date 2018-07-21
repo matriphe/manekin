@@ -42,6 +42,14 @@ longitude($min = 95.31644, $max = 140.71813)  // 106.84513
 localCoordinates()                            // array('latitude' => -6.21462, 'longitude' => 106.84513)
 ```
 
+#### Matriphe\Manekin\Providers\DateTime
+
+Return birth date.
+
+```php
+birthDate($minAge = 13, $maxAge = 100, $timezone = null)    // DateTime('1984-03-22 20:38:00', 'Asia/Jakarta')
+```
+
 #### Matriphe\Manekin\Providers\Device
 
 Return IMEI, IMSI, ICCID, and Android Device ID.
