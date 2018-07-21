@@ -71,6 +71,14 @@ sim()                   // 849322123456
 passport()              // A1234567
 ```
 
+#### Matriphe\Manekin\Providers\Miscellaneous
+
+Return random alpha numeric.
+
+```php
+randomAlphaNumeric($length = null)     // QS9F8JAR25SF
+```
+
 #### Matriphe\Manekin\Providers\PhoneNumber
 
 Return mobile phone numbers that recognized by Indonesian providers (Telkomsel, Indosat Ooredoo, XL Axiata, Axis, Tri, and Smartfren).
