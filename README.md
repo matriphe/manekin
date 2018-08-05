@@ -26,6 +26,14 @@ Now your model factory should load **Manekin**.
 
 This package supports [Laravel 5.5 package auto discovery](https://laravel.com/docs/5.5/packages#package-discovery) feature. You don't need to manually add in the `config/app.php`.
 
+### Lumen Integration
+
+Open `bootstrap/app.php` and add this line in `Register Service Providers` section.
+
+```php
+$app->register(Matriphe\Manekin\ManekinServiceProvider::class);
+```
+
 ## Usage
 
 Manekin's methods are same with Faker's methods. It just extending the methods.
